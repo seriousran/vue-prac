@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    {{ cmp2Data }}
+    {{ message }}
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data: function () {
     return {
-      cmp2Data: 200
+      message: 'Hello Vue.js!'
     }
   }
 }

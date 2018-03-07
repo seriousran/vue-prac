@@ -19,6 +19,7 @@ export default {
   },
   mounted: function () {
     console.log('mounted')
+    this.cmp3 = 'Hello Vue!'
   },
   update: function () {
     console.log('updated')

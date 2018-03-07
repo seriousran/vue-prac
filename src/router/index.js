@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Ex02x1 from '@/components/Ex02x1'
 import Ex02x2 from '@/components/Ex02x2'
+import Ex03x1 from '@/components/Ex03x1'
 
 Vue.use(Router)
 
@@ -13,6 +14,7 @@ export default new Router({
       component: HelloWorld
     },
     { path: '/Ex02x1', component: Ex02x1 },
-    { path: '/Ex02x2', component: Ex02x2 }
+    { path: '/Ex02x2', component: Ex02x2 },
+    { path: '/Ex03x1', component: Ex03x1 }
   ]
 })

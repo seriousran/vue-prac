@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png"><br/>
-    <router-view/>
+    <router-view/><br/>
     <router-link to="/Ex02x1">02-1_example</router-link><br/>
     <router-link to="/Ex02x2">02-2_example</router-link><br/>
+    <router-link to="/Ex03x1">03-1_example</router-link><br/>
     <!--<my-component1></my-component1>
     <Ex02x2></Ex02x2>-->
   </div>
@@ -12,13 +13,14 @@
 <script>
 import Ex02x1 from './components/Ex02x1'
 import Ex02x2 from './components/Ex02x2'
+import Ex03x1 from './components/Ex03x1'
 
 export default {
   name: 'App',
-  el: '#app',
   components: {
     'my-component1': Ex02x1,
-    Ex02x2
+    Ex02x2,
+    Ex03x1
   },
   data: function () {
     return {

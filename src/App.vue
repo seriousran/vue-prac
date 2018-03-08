@@ -12,6 +12,7 @@
     <!--<router-link to="/Ex03x9">03-9_example</router-link><br/>-->
     <Ex03x10></Ex03x10>
     <router-link to="/Ex04x5">04-5_example</router-link><br/>
+    <router-link to="/Ex05x4">05-4_example</router-link><br/>
   </div>
 </template>
 

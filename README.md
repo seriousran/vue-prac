@@ -1,11 +1,19 @@
 # vue-prac
 
-> A Vue.js project
+> 본 프로젝트는 싱글 파일 컴포넌트 체계로 "Vue.js 입문 - 장기효 지음(이지스 퍼블리싱)"의 예제를 이용하여 작성하였다. 라우팅을 이용해서 메인 페이지로부터 라우팅하거나- 컴포넌트를 직접 렌더하기도 하였다. 많은 시행착오를 거치며 책에서 다룬 내용 이외에 필요한것들은 아래에 링크를 참조하였다.
+
+## Needs fix
+
+예제 5-4 104p
+<li v-for="system in systems">{{ system }}</liv>
+v-bind:key가 필요하다는 오류가 나타나는 경우가 있을 것이다.
+<li v-for="(system, index) in systems" v-bind:key="index"> {{ system }} </li>
+로 수정하면 될 것이다.
+이유는 "In 2.2.0+, when using v-for with a component, a key is now required."라고 <https://vue.org>에 나타나있다. 분명한 이유가 v2.2.0+ 인지, component인지에 대해서는 논란이 있다.
 
 ## Links
 
-component간 통신 - A simple EventBus to communicate between Vue.js components (Medium)
-
+eventBus를 이용한 component간 통신 - A simple EventBus to communicate between Vue.js components (Medium)
 <https://medium.com/@andrejsabrickis/https-medium-com-andrejsabrickis-create-simple-eventbus-to-communicate-between-vue-js-components-cdc11cd59860>
 
 ## Build Setup

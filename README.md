@@ -5,9 +5,13 @@
 ## Needs fix
 
 예제 5-4 104p
+``` html
 <li v-for="system in systems">{{ system }}</liv>
+```
 v-bind:key가 필요하다는 오류가 나타나는 경우가 있을 것이다.
+``` html
 <li v-for="(system, index) in systems" v-bind:key="index"> {{ system }} </li>
+```
 로 수정하면 될 것이다.
 이유는 "In 2.2.0+, when using v-for with a component, a key is now required."라고 <https://vue.org>에 나타나있다. 분명한 이유가 v2.2.0+ 인지, component인지에 대해서는 논란이 있다.
 

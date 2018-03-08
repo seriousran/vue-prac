@@ -2,6 +2,12 @@
 
 > A Vue.js project
 
+## Links
+
+component간 통신 - A simple EventBus to communicate between Vue.js components (Medium)
+
+<https://medium.com/@andrejsabrickis/https-medium-com-andrejsabrickis-create-simple-eventbus-to-communicate-between-vue-js-components-cdc11cd59860>
+
 ## Build Setup
 
 ``` bash

@@ -10,6 +10,7 @@
     <router-link to="/Ex03x8">03-8_example</router-link><br/>
     <Ex03x9 v-on:show-log="printText"></Ex03x9>
     <!--<router-link to="/Ex03x9">03-9_example</router-link><br/>-->
+    <Ex03x10></Ex03x10>
     <!--<my-component1></my-component1>
     <Ex02x2></Ex02x2>-->
   </div>
@@ -22,6 +23,8 @@ import Ex03x1 from './components/Ex03x1'
 import Ex03x7 from './components/Ex03x7'
 import Ex03x8 from './components/Ex03x8'
 import Ex03x9 from './components/Ex03x9'
+import Ex03x10 from './components/Ex03x10'
+import EventBus from './components/event-bus'
 
 export default {
   name: 'App',
@@ -31,7 +34,13 @@ export default {
     Ex03x1,
     Ex03x7,
     Ex03x8,
-    Ex03x9
+    Ex03x9,
+    Ex03x10
+  },
+  created: function () {
+    EventBus.$on('triggerEventBus', function (value) {
+      console.log('이벤트를 전달받음. 전달받은 값 : ', value)
+    })
   },
   data: function () {
     return {

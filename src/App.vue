@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png"><br/>
     <router-view/><br/>
+    <hr>
     <router-link to="/Ex02x1">02-1_example</router-link><br/>
     <router-link to="/Ex02x2">02-2_example</router-link><br/>
     <router-link to="/Ex03x1">03-1_example</router-link><br/>

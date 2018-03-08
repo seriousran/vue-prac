@@ -9,7 +9,7 @@
     <!--<Ex03x8 v-bind:propsdata="message"></Ex03x8>-->
     <router-link to="/Ex03x8">03-8_example</router-link><br/>
     <Ex03x9 v-on:show-log="printText"></Ex03x9>
-    <router-link to="/Ex03x9">03-9_example</router-link><br/>
+    <!--<router-link to="/Ex03x9">03-9_example</router-link><br/>-->
     <!--<my-component1></my-component1>
     <Ex02x2></Ex02x2>-->
   </div>
@@ -38,9 +38,9 @@ export default {
       message: 'Hello Vue.js'
     }
   },
-  method: {
-    printText: function() {
-      console.log("received and event")
+  methods: {
+    printText: function () {
+      console.log('received an event')
     }
   }
 }

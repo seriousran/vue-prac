@@ -1,10 +1,15 @@
 <template>
-  <button v-on:click="showLog">show</button>
-</teamplate>
+  <div>
+    <button v-on:click="showLog">03-9_example</button>
+  </div>
+</template>
 
 <script>
-method: {
-  showLog: function() {
-    this.$emit('show-log');
+export default {
+  methods: {
+    showLog: function () {
+      this.$emit('show-log')
+    }
+  }
 }
 </script>

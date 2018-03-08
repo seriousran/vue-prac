@@ -6,13 +6,12 @@
     <router-link to="/Ex02x2">02-2_example</router-link><br/>
     <router-link to="/Ex03x1">03-1_example</router-link><br/>
     <router-link to="/Ex03x7">03-7_example</router-link><br/>
-    <!--<Ex03x8 v-bind:propsdata="message"></Ex03x8>-->
-    <router-link to="/Ex03x8">03-8_example</router-link><br/>
+    <Ex03x8 v-bind:propsdata="mEx37"></Ex03x8>
+    <!--<router-link to="/Ex03x8">03-8_example</router-link><br/>-->
     <Ex03x9 v-on:show-log="printText"></Ex03x9>
     <!--<router-link to="/Ex03x9">03-9_example</router-link><br/>-->
     <Ex03x10></Ex03x10>
-    <!--<my-component1></my-component1>
-    <Ex02x2></Ex02x2>-->
+    <router-link to="/Ex04x5">04-5_example</router-link><br/>
   </div>
 </template>
 
@@ -44,7 +43,8 @@ export default {
   },
   data: function () {
     return {
-      message: 'Hello Vue.js'
+      message: 'Hello Vue.js',
+      mEx37: '03-8_example 결과 입니다.'
     }
   },
   methods: {

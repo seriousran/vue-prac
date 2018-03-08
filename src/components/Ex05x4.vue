@@ -9,6 +9,8 @@
     <button v-on:click="popupAlert">경고 창 버튼</button>
     <button v-on:click="clickBtn">클릭</button>
     <button v-on:click="clickBtn2(10)">클릭</button>
+    <button v-on:click="clickBtn3">클릭</button>
+    <button v-on:click="clickBtn4($event, 7)">클릭</button>
   </div>
 </template>
 
@@ -30,6 +32,13 @@ export default {
     },
     clickBtn2: function (num) {
       alert('clicked ' + num + ' times')
+    },
+    clickBtn3: function (event) {
+      console.log(event)
+    },
+    clickBtn4: function (event, num) {
+      alert('clicked ' + num + ' times')
+      console.log(event)
     }
   }
 }

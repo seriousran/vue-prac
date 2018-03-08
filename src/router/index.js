@@ -9,6 +9,7 @@ import Ex03x8 from '@/components/Ex03x8'
 import Ex03x9 from '@/components/Ex03x9'
 import Ex04x5 from '@/components/Ex04x5'
 import Ex05x4 from '@/components/Ex05x4'
+import Ex05x8 from '@/components/Ex05x8'
 
 Vue.use(Router)
 
@@ -22,6 +23,7 @@ export default new Router({
     { path: '/Ex03x8', component: Ex03x8 },
     { path: '/Ex03x9', component: Ex03x9 },
     { path: '/Ex04x5', component: Ex04x5 },
-    { path: '/Ex05x4', component: Ex05x4 }
+    { path: '/Ex05x4', component: Ex05x4 },
+    { path: '/Ex05x8', component: Ex05x8 }
   ]
 })

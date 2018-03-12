@@ -17,12 +17,14 @@
 </template>
 
 <script>
-import Modal from './common/modal.vue'
+import Modal from './common/Modal.vue'
 
 export default {
+  props: ['propsdata'],
   data () {
     return {
-      newTodoItem: ''
+      newTodoItem: '',
+      showModal: false
     }
   },
   methods: {
@@ -32,8 +34,16 @@ export default {
         // localStorage.setItem(value, value)
         this.$emit('addTodo', value)
         this.clearInput()
+      } else {
+        this.showModal = !this.showModal
       }
+    },
+    clearInput () {
+      this.newTodoItem = ''
     }
+  },
+  components: {
+    Modal: Modal
   }
 }
 </script>

@@ -40,15 +40,50 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Additional Information
+
+- Vuex Example <br/>
+#### main.js
+```vue
+import Vue from 'vue'
+import App from './App'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+const store = new Vuex.Store({
+  state: {
+    count: 12
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  store,
+  render: h => h(App)
+})
+```
+#### App.vue
+```vue
+<template>
+  <div id="app">
+    <p>{{ count }} </p>
+  </div>
+</template>
+<script>
+export default {
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
+  }
+}
+</script>
+<style>
+</style>
+```
